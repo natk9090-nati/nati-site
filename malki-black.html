@@ -77,6 +77,12 @@ figcaption{margin-top:.75rem;font-size:.95rem;color:var(--muted)}
 .flyer{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(2rem,5vw,4rem);align-items:center}
 .flyer .piece img{max-width:min(420px,100%);margin-inline:auto}
 
+.quote{margin:0;padding:clamp(3rem,7vw,5rem) 0;border-top:1px solid var(--wire);display:grid;grid-template-columns:auto minmax(0,1fr);gap:clamp(1rem,3vw,2rem);align-items:start}
+.quote .mark{font-family:var(--display);font-size:clamp(6rem,14vw,9rem);line-height:.7;color:var(--teal)}
+.quote blockquote{margin:0}
+.quote blockquote p{font-size:clamp(1.35rem,3vw,1.9rem);line-height:1.5;font-weight:500;max-width:34ch;margin:0 0 1.25rem}
+.quote figcaption{font-size:1rem;color:var(--muted)}
+.quote figcaption b{color:var(--ink);font-weight:600}
 .next{border-top:1px solid var(--wire);padding:3rem 0 4rem;display:flex;flex-wrap:wrap;justify-content:space-between;gap:1.5rem;align-items:center}
 .btn{display:inline-flex;text-decoration:none;font-weight:600;padding:.85rem 1.6rem;border-radius:10px;background:var(--amber);color:#1D2740}
 .btn:hover{background:#FFC24D}
@@ -154,6 +160,16 @@ figcaption{margin-top:.75rem;font-size:.95rem;color:var(--muted)}
     </div>
     <figure class="piece"><img src="img/malki/flyer.webp" alt="פלייר בגודל A4: ילד בן שנה עם עוגה בגן, הכותרת הנציחו את הקסם, ושלוש נקודות על החוויה" width="990" height="1400" loading="lazy"></figure>
   </section>
+
+  <figure class="quote">
+    <span class="mark" aria-hidden="true">״</span>
+    <div>
+      <blockquote>
+        <p>כשפניתי לנתי היה לי רק מחשבה קלושה מה אני רוצה בלוגו. ונתי, ביצירתיות מקסימה, הפיק לי מיתוג קולע ומותאם שהתאהבתי בו לגמרי.</p>
+      </blockquote>
+      <figcaption><b>מלכי בלאק</b>, צלמת ניו־בורן ומשפחה</figcaption>
+    </div>
+  </figure>
 
   <div class="next">
     <p style="margin:0;font-size:1.2rem;font-weight:500">צריכים מיתוג שמרגיש כמו העסק שלכם?</p>
