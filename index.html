@@ -122,8 +122,10 @@ p{max-width:62ch}
 /* projects */
 .proj{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:0;text-decoration:none;color:inherit;border-radius:18px;overflow:hidden;background:var(--wall);color:var(--wall-ink);box-shadow:0 24px 50px -24px rgba(16,22,42,.5);transition:transform .25s}
 .proj:hover{transform:translateY(-4px)}
-.proj .shot{background:#fff;display:grid;place-items:center;padding:2rem;min-height:240px}
-.proj .shot img{width:min(380px,100%)}
+.proj .shot{position:relative;background:linear-gradient(160deg,#F3F6F7,#DCE7E9);aspect-ratio:16/11;overflow:hidden}
+.proj .shot img{position:absolute;height:auto;border-radius:6px;box-shadow:0 14px 30px -10px rgba(16,22,42,.45)}
+.proj .shot .b{width:62%;left:6%;top:12%;transform:rotate(-6deg)}
+.proj .shot .f{width:66%;right:7%;bottom:12%;transform:rotate(4deg)}
 .proj .txt{padding:clamp(1.5rem,4vw,2.5rem);display:flex;flex-direction:column;justify-content:center}
 .proj .tag{color:var(--amber);font-weight:600;font-size:.95rem;margin:0}
 .proj h3{font-family:var(--display);font-size:clamp(2.6rem,6vw,3.6rem);line-height:.9;margin:.3rem 0 .8rem;font-weight:700}
@@ -213,7 +215,7 @@ footer{border-top:1px solid var(--wire);padding:1.5rem 0;text-align:center;font-
   <section aria-labelledby="t-projects" id="projects">
     <h2 id="t-projects">פרויקטים</h2>
     <a class="proj" href="malki-black.html">
-      <div class="shot"><img src="img/malki/logo.webp" alt="" width="842" height="452" loading="lazy"></div>
+      <div class="shot" aria-hidden="true"><img class="b" src="img/malki/card-back.webp" alt="" width="1400" height="778" loading="lazy"><img class="f" src="img/malki/card-front.webp" alt="" width="1400" height="778" loading="lazy"></div>
       <div class="txt">
         <p class="tag">מיתוג מלא</p>
         <h3>Malki Black</h3>
